@@ -16,7 +16,7 @@ FEATURES = ['Age', 'SibSp', 'Parch', 'Fare', 'Pclass_1', 'Pclass_2', 'Pclass_3',
 def load_model():
     try:
         # Ruta específica a tu modelo
-        model_path = 'F:/DocusSilvana/Desarrollo/py_bigdata/modelo_titanic.joblib'        
+        model_path = 'modelo_titanic.joblib'        
         if not os.path.exists(model_path):
             st.error(f"No se encontró el modelo en: {model_path}")
             st.info("Por favor, asegúrate de que el archivo 'rf_model.joblib' esté en el mismo directorio que esta aplicación.")
